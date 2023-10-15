@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="formcss.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>FORM</h2>
+
+    <form action="#" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span id="nameError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <span id="phoneError" class="error"></span>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <span id="dobError" class="error"></span>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span id="messageError" class="error"></span>
+        <label for="color">Course</label>
+        <select id="color" name="color" required>
+            <option value="">Select a Course</option>
+            <option value="red">BE</option>
+            <option value="blue">BSC</option>
+            <option value="green">B ED</option>
+            <option value="yellow">B COM</option>
+            <option value="orange">BA BL</option>
+        </select>
+        <span id="colorError" class="error"></span>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
